@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css.css">
+  <script src="js.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    span {
+      display: inline-block;
+    }
+
+    body {
+      width: 100%;
+      background-attachment: fixed;
+      background-size: 100%;
+      background-image: url(bac.jpg);
+      background-repeat: no-repeat;
+      color: rgb(235, 231, 231);
+      margin: 10px;
+      font-size: 28px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #navbar {
+      display: ;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #myFooter {
+      width: 100%;
+      padding: 1rem;
+      text-align: right;
+      background-color: rgba(23, 23, 245, 0.836);
+      color: rgb(218, 222, 224);
+      font-size: small;
+
+    }
+
+    a {
+      color: rgb(218, 222, 224);
+
+    }
+
+    ul {
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="container-fluid">
+    <div>
+      <img style="width: 15rem; height: 4rem;" src="ttt.png" alt="Welcome to Veronica">
+      <button type="button" style="float: right; font-size: large" class="btn btn-success btn-sm fa fa-user-circle-o"
+        role="button" onclick="openForm()"> Sign in</button>
+    </div>
+
+    <div class="container-fluid" style="position: sticky; top: 0; background-color: rgba(0, 0, 0, 0.603); z-index: 2;"
+      id="navbar">
+      <a style="width: 9rem" class="btn btn-success btn-sm" role="button" href="#">Home</a>
+
+
+
+      <span class="dropdown">
+        <button style="width: 9rem" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+          Packages
+        </button>
+        <div class="dropdown-menu" style="width: 13rem; height: auto;">
+          <h4 class="dropdown-header text-left">Hills Stations</h4>
+          <a class="dropdown-item" href="#">Shijhgvhjmla </a>
+          <a class="dropdown-item" href="#">Manali </a>
+          <a class="dropdown-item" href="#">Jaypur </a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header ">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+        </div>
+      </span>
+      <span class="dropdown">
+        <button style="width: 9rem" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+          Themes
+        </button>
+        <div class="dropdown-menu" style="width: 13rem; height: auto;">
+          <h4 class="dropdown-header text-left">Hills Stations</h4>
+          <a class="dropdown-item" href="#">Shijhgvhjmla </a>
+          <a class="dropdown-item" href="#">Manali </a>
+          <a class="dropdown-item" href="#">Jaypur </a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+        </div>
+      </span>
+      <span class="dropdown">
+        <button style="width: 9rem" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+          Destinations
+        </button>
+        <div class="dropdown-menu" style="width: 13rem; height: auto;">
+          <h4 class="dropdown-header text-left">India Destinations</h4>
+          <a class="dropdown-item" href="#">Shimla </a>
+          <a class="dropdown-item" href="#">Manali </a>
+          <a class="dropdown-item" href="#">Jaypur </a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">International Destinations</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+        </div>
+
+      </span>
+      <span class="dropdown">
+        <button style="width: 9rem" type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
+          Packages
+        </button>
+        <div class="dropdown-menu" style="width: 13rem; height: auto;">
+          <h4 class="dropdown-header text-left">Hills Stations</h4>
+          <a class="dropdown-item" href="#">Shijhgvhjmla </a>
+          <a class="dropdown-item" href="#">Manali </a>
+          <a class="dropdown-item" href="#">Jaypur </a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+
+          <div class="dropdown-divider"></div>
+          <h4 class="dropdown-header text-left">Treks</h4>
+          <a class="dropdown-item" href="#">Singapore</a>
+          <a class="dropdown-item" href="#">Nepal</a>
+          <a class="dropdown-item" href="#">Malaysia</a>
+        </div>
+      </span>
+      <span style="float: right; font-size: small; margin: 1rem;" class="text-grey-50" id="clocktime"></span>
+
+
+    </div>
+
+
+    <div style="position: relative; z-index: 1;" id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="1.jpg" alt="Chicago" style="width: 100%">
+          <div class="carousel-caption">
+            <h1 class="display-4" style="text-shadow:2px 2px 4px black">Top travel trends in 2019</h1>
+            <h3 style="text-shadow:2px 2px 4px black">Explore world like never before</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+
+          <img src="3.JPG" alt="Los Angeles" style="width: 100%">
+          <div class="carousel-caption">
+            <h1 class="display-4" style="text-shadow:2px 2px 4px black;">Food lovers paradise
+            </h1>
+            <h3 style="text-shadow:2px 2px 4px black">For tempting cuisines around the world</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="2.jpg" alt="New York" style="width: 100%">
+          <div class="carousel-caption">
+            <h1 class="display-4" style="text-shadow:2px 2px 4px black">Discover & Book
+            </h1>
+            <h3 style="text-shadow:2px 2px 4px black">Perfect tour package for your holidays</h3>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <div style="background-color: rgb(28, 29, 25); height: 4rem; padding: 1rem">
+
+      <h3> _____ India's most Popular Places_______
+      </h3>
+
+    </div>
+    <div class="text-dark bg-light">
+
+
+      <div class="card-deck">
+        <div class="card ">
+          <div class="card-body text-center">
+            <img class="card-img-top" src="manali.jpg" alt="Card image" style="width:100%">
+            <h4 class="card-text">Manali</h4>
+            <h6> Starting @ ₹ 5600</h6>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <img class="card-img-top" src="mahabaleshwar.jpg" alt="Card image" style="width:100%">
+            <h4 class="card-text text-center">Mahabaleshwar</h4>
+            <h6> Starting @ ₹ 2300</h6>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <img class="card-img-top" src="ooty.jpg" alt="Card image" style="width:100%">
+            <h4 class="card-text">Ooty</h4>
+            <h6> Starting @ ₹ 5000</h6>
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-body text-center">
+            <img class="card-img-top" src="goa.jpeg" alt="Card image" style="width:100%">
+            <h4 class="card-text">Goa</h4>
+            <h6> Starting @ ₹ 4300</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: rgba(0, 0, 0, 0.671); height: 25rem;">
+      <img src="couple.png" alt="" style="height: 25rem;">
+      <div style="position:relative; float: right; margin-right: 2rem; margin-top: 5rem">
+        <h3>Popular Destinations for COUPLES</h3><br>
+        <span style="position: relative">
+          <img src="ba.jpg" alt="" style="width: 13rem; height: 13 rem;">
+          <h4><a href="#">Scotland</a></h4>
+        </span>
+        <span style="position: relative">
+          <img src="bac.jpg" alt="" style="width: 13rem; height: 13 rem;">
+          <h4><a href="#">Singapore</a></h4>
+        </span>
+        <span style="position: relative">
+          <img src="ban.jpg" alt="" style="width: 13rem; height: 13 rem;">
+          <h4><a href="#">Bangkok</a></h4>
+        </span>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="my-reg" id="myreg">
+    <button type="button" class="btn btn-danger" onclick="closeForm()" style="float: right">X</button>
+
+    <div class="container"
+      style="font-size: smaller; width:30rem; height: 39rem; background-color: rgba(0, 0, 0, 0.678); padding: 2rem">
+     <form onsubmit="add()">
+        First name <br>
+        <input type="name" required placeholder="Rachel" class="form-control" id="fn"><br>
+        Last name<br>
+        <input type="name" required placeholder="Green" class="form-control" id="ln"><br>
+        email <br>
+        <input type="email" required placeholder="pat@gmail.com" class="form-control" id="email"><br>
+        Mob no. <br>
+        <input type="number" required placeholder="9876543210" class="form-control" id="mob"><br>
+        Username <br>
+        <input type="text" required placeholder="username" class="form-control" id="username"><br>
+        Password <br>
+        <input type="password" required placeholder="password" class="form-control" id="password1"><br>
+        Re-enter password <br>
+        <input type="password" required placeholder="re-enter password" class="form-control" id="password2"><br>
+
+
+        <input type="submit" value="Submit"  class="btn btn-success"><br>
+      </form>
+    </div>
+  </div>
+
+
+  <div class="form-popup" id="myForm">
+    <button type="button" class="btn btn-danger" onclick="closeForm()" style="float: right">X</button>
+
+    <div class="container" style="width:30rem; height: 39rem; background-color: rgba(0, 0, 0, 0.678); padding: 3rem">
+
+      <div class="login-form" style="width: 24rem; height: 30rem;">
+        <form action="/examples/actions/confirmation.php" method="post">
+          <h2 class="text-center">Sign in</h2>
+          <div class="text-center social-btn">
+            <a href="#" class="btn btn-primary btn-block"><i class="fa fa-facebook"></i> Sign in with
+              <b>Facebook</b></a>
+            <a href="#" class="btn btn-info btn-block"><i class="fa fa-twitter"></i> Sign in with
+              <b>Twitter</b></a>
+            <a href="#" class="btn btn-danger btn-block"><i class="fa fa-google"></i> Sign in with
+              <b>Google</b></a>
+          </div>
+          <div style="text-align: center"><i>OR</i></div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-user"> </i> -</span>
+              <input type="text" class="form-control" name="username" placeholder="Username" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock"> </i> -</span>
+              <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success btn-block login-btn">Sign in</button>
+          </div>
+          <div class="clearfix">
+            <label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+            <a href="#" class="pull-right text-success">Forgot Password?</a>
+          </div>
+        </form>
+        <div class="hint-text small">Don't have an account? <input class="button btn-success" type="button"
+            onclick="openreg()" value="Register Now"> </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="container-fluid" id="myFooter">
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="ttt.png" alt="mytravel.in" style="width: 12rem; height: 5em; opacity: 0.8;">
+      </div>
+      <div class="col-sm-2">
+        <h5>Get started</h5>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sign up</a></li>
+          <li><a href="#">Downloads</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>About us</h5>
+        <ul>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-2">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Help desk</a></li>
+          <li><a href="#">Forums</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <div class="social-networks" style="margin: 2rem">
+          <button type="button" class="btn btn-default" style="color: rgb(177, 177, 177)">Contact us on</button>
+          <a href="#" class="twitter"><i class="fa fa-twitter " style="font-size:2rem;"></i> </a>
+          <a href="#" class="facebook"><i class="fa fa-facebook" style="font-size:2rem;"></i> </a>
+          <a href="#" class="google"><i class="fa fa-google-plus" style="font-size:2rem;"></i> </a>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright0" style="text-align: center">
+    <h5>© 2016 Copyright Text </h5>
+  </div>
+  <a style=" position: sticky; bottom: 0; margin-left: 2rem;" class="btn btn-danger btn-lg" role="button"
+    href="#">Top</a>
+</body>
+<script>
+  var clock = setInterval(myclock, 1000);
+  function myclock() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById('clocktime').innerHTML = t;
+  }
+</script>
+
+</html>
